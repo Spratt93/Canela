@@ -16,7 +16,7 @@ To execute an *stql* file:
 3. `ghc Stql.hs` to compile all the required haskell 
 4. `./Stql filename.stql` to execute the script *filename*
 
-Syntax highlighted is supported in Notepad++ if you import the *stql.xml*
+Syntax highlighting is supported in **Notepad++** if you import the *stql.xml*
 
 The syntax/semantics of our language is detailed in the report
 
