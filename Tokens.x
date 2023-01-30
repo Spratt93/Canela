@@ -6,7 +6,7 @@ import System.Environment
 
 %wrapper "posn" 
 $digit = 0-9     
-$alpha = [a-zA-Z\.\:\$\|\*\+\?\#\~\-\{\}\(\)\[\]\^\/]
+$alpha = [a-zA-Z\.\:\$\|\*\+\?\#\~\-\{\}\(\)\[\]\^\/\<\>]
 $filealpha = [a-zA-Z]
 
 tokens :-
@@ -37,8 +37,8 @@ tokens :-
   True                                         { \p b -> TokenBool p (read b) }
   False                                        { \p b -> TokenBool p (read b) }
   $digit+                                      { \p n -> TokenInt p (read n) }
-  \" $alpha [$digit $alpha]* \"                { \p s -> TokenString p s }
-  $filealpha [$digit $filealpha]*                  { \p s -> TokenFile p s }
+  \" [$digit $alpha]* \"                { \p s -> TokenString p s }
+  $filealpha [$digit $filealpha]*              { \p s -> TokenFile p s }
 
 {
 -- Each action has type :: AlexPosn -> String -> Token

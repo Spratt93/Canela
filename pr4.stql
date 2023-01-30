@@ -1,0 +1,2 @@
+-- Task 4
+READ foo bar WHERE foo.OBJ = bar.SUBJ OR bar.OBJ = foo.SUBJ

@@ -1,0 +1,4 @@
+-- Task 1
+READ foo bar
+
+-- Another solution: READ foo AND READ bar

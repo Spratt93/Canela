@@ -1,0 +1,6 @@
+-- Task 5
+READ foo WHERE IF (foo.OBJ < 0 OR foo.OBJ > 99) 
+                  THEN CHANGE foo.SUBJ "<http://www.cw.org/problem5/#inRange>" False
+			      ELSE INSERT foo.SUBJ foo.PRED foo.OBJ+1 AND
+	                   CHANGE foo.SUBJ "<http://www.cw.org/problem5/#inRange>" True
+		       END

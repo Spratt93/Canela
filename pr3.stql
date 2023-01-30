@@ -1,0 +1,4 @@
+-- Task 3
+READ foo WHERE foo.PRED = "<http://www.cw.org/problem3/#predicate1>" OR 
+                     foo.PRED = "<http://www.cw.org/problem3/#predicate2>" OR 
+					 foo.PRED = "<http://www.cw.org/problem3/#predicate3>"

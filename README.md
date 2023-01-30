@@ -9,8 +9,15 @@ This language was written in Haskell.
 
 Canela performs operations on Turtle files like *foo.ttl* 
 
-Our chosen file extension for Canela files is *stql*
+To execute an *stql* file:
 
-The syntax of our language is detailed in the report
+1. `alex Tokens.x` to generate the lexer haskell code 
+2. `happy Grammar.y` to generate the parse tree haskell code
+3. `ghc Stql.hs` to compile all the required haskell 
+4. `./Stql filename.stql` to execute the script filename
+
+Syntax highlighted is supported in Notepad++ if you import the *stql.xml*
+
+The syntax/semantics of our language is detailed in the report
 
 Authors: Chris Georgiev, Edward Clewer and Tom Cutts

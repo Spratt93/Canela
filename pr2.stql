@@ -1,0 +1,2 @@
+-- Task 2
+READ foo WHERE foo.SUBJ = "<http://www.cw.org/#problem2>" AND foo.OBJ = True
