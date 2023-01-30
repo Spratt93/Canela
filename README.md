@@ -14,7 +14,7 @@ To execute an *stql* file:
 1. `alex Tokens.x` to generate the lexer haskell code 
 2. `happy Grammar.y` to generate the parse tree haskell code
 3. `ghc Stql.hs` to compile all the required haskell 
-4. `./Stql filename.stql` to execute the script filename
+4. `./Stql filename.stql` to execute the script *filename*
 
 Syntax highlighted is supported in Notepad++ if you import the *stql.xml*
 
